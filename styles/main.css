@@ -1,0 +1,52 @@
+
+/* Defino propriedades que 'facilitam' no futuro */
+:root{
+    --title-color: #322153;
+    --primary-color: #34cb79;
+    
+}
+
+/* Referencio todos os seletores */
+* { 
+    margin: 0; /* ao colocar o margin, as coisas ficarão encavaladas*/
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Defino que tudo da tag 'html', terá a fonte Roboto sans-serif */
+html {
+    font-family: Roboto, sans-serif;
+    }
+
+
+/* Defino que tudo da tag 'body', terá a o background da cor especificada */
+body {
+    background:#f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Defino que tudo da tag 'a', terá um text-decoration igual a none */
+a {
+    text-decoration: none;
+}
+
+
+/* Defino que tudo da tag 'h1, h2, h3, h4, h5 e h5', terá fonte Ubuntu, com a cor de titulo definida em :root */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+}
+
+
+/* BOX MODEL
+Modelo de caixa
+Toda caixa de tem
+largua, altura, espaçamentos, preenchimentos
+bordas, cor, fundo, maneira que é vista pelo html (display)
+posicionamento
+alinhamentos
+*/
+
+

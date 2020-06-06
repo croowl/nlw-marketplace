@@ -1,0 +1,38 @@
+/* Conteudo movido de main.css */
+
+@media (max-width: 900px) { /* tratar o conteudo nas responsividades - diz que até 900px, essa pagina responderá essas regras */
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%); /*faz encontrar o meio da pagina */
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+} 
+
+
+
+@media (max-width: 1700px) { /*quando for no minimo 1700px, respeita essas regras*/
+    #page-home {
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 800px) { /*até 760px, respeita essas regras */
+    #page-home {
+        background-position-y: 200px;
+    }
+}

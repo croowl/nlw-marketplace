@@ -1,0 +1,128 @@
+/* Daqui pra baixo, começo a tratar o conteudo da página em blocos, de forma CASCATEADA e através do id=page-home (DEFINIDO NO index.html)*/
+/* Conteudo movido de main.css*/
+
+#page-home {
+    height: 100vh; /*medida de view port height (100 bloquinhos) */
+    background: url('../assets/home-background.svg') no-repeat; /*no-repeat para nao repetir a imagem*/
+    background-position: 35vw bottom;  /*medida de view port width */
+
+}
+
+#page-home .content {
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+
+    margin: 0 auto; /* 0 equivale a top e bottom, auto equivale a left-right*/
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* page-home > header */
+#page-home header {
+
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+/* page-home > header > a */
+#page-home header a {
+    display: flex;
+
+    color: var(--title-color);
+    font-weight: 700;
+
+    text-decoration: none; /*posso tirar aqui, mas todos os itens do "a" terão essa marcação de hiperlink, então é mais recomendado tirar de todos láááá em cima do código */
+
+}
+
+/* page-home > header > a > span */
+#page-home header a span {
+
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../assets/log-in.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+
+    /*height: 600px;*/
+    flex: 1; /*pega o tamanho que sobra do HEADER e do MAIN*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1 {
+    font-size: 54px;
+    }
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px; /*altura da linha */
+    margin-top: 24px;
+}
+
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 70px;
+
+    border-radius: 8px;
+
+    display: flex;  
+    align-items: center;
+
+    margin: 40px;
+
+    background-color: var(--primary-color);
+
+    transition: 400ms; /*tempo transiçao*/
+
+    /*font-weight: bold;*/ /* posso tirar pois o <strong> do HTML ja recebe o bold*/
+    /*color: white; pode ser colocada no page-main a strong */
+}
+
+#page-home main a:hover { /* estilização especial */
+    background-color: #2fb86e;
+}
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    
+    border-top-left-radius: 8px; /* tira a sobrinha do quadrado*/
+    border-bottom-left-radius: 8px; /* tira a sobrinha do quadrado*/
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after { /* pseudo objeto (NAO EXISTE NO HTML) */
+    content: "";
+    background-image: url("../assets/search.svg");
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
