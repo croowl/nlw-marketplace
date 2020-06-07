@@ -47,7 +47,7 @@ function getCities(event) {
     })
 
     //Faz a busca por cidade após selecionar o estado ficar 'mais rapido'
-    citySelect.innerHTML = `option value="">Selecione a cidade</option>`
+    citySelect.innerHTML = `<option value="">Selecione a cidade</option>`
 
 }
 
