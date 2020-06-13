@@ -1,6 +1,6 @@
 /* Conteudo movido de main.css */
 
-@media (max-width: 900px) { /* tratar o conteudo nas responsividades - diz que até 900px, essa pagina responderá essas regras */
+@media (max-width: 910px) { /* tratar o conteudo nas responsividades - diz que até 900px, essa pagina responderá essas regras */
     #page-home {
         background-position-x: 70vw;
     }
@@ -21,15 +21,19 @@
     #page-home main{
         align-items: center;
     }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
 } 
 
 
-
-@media (max-width: 1700px) { /*quando for no minimo 1700px, respeita essas regras*/
+@media (min-width: 1700px) { 
     #page-home {
-        background-position-x: 40vw;
+        background-position-x: 50vw;
     }
 }
+
 
 @media (max-height: 800px) { /*até 760px, respeita essas regras */
     #page-home {
