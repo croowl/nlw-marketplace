@@ -1,0 +1,27 @@
+{
+  "name": "nlw-marketplace",
+  "version": "1.0.0",
+  "description": "Aplicação web de markplace de coleta de resíduos, desenvolvido durante a Next Level Week da RocketSeat.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius-arch/nlw-marketplace.git"
+  },
+  "keywords": [],
+  "author": "Vinicius G. Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicius-arch/nlw-marketplace/issues"
+  },
+  "homepage": "https://github.com/vinicius-arch/nlw-marketplace#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
