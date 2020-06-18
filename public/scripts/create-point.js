@@ -44,7 +44,7 @@ function getCities(event) {
     .then ( cities => {
 
         for(const city of cities){
-            citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+            citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
         }
 
         citySelect.disabled = false
@@ -88,7 +88,7 @@ const collectedItems = document.querySelectorAll("input[name=items]")
 let selectedItems = []
 
 // Em seguida, crio a função pra (de)selecionar o item da lista
-function handleSelectedItem() {
+function handleSelectedItem(event) {
 
     const itemLi = event.target
     
@@ -96,13 +96,15 @@ function handleSelectedItem() {
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id // dataset = data.id no html
+
+    console.log('ITEM ID: ', itemId)
   
     // verificar se existem selecionados, se sim
     // pegar os itens selecionados
 
     const alreadySelected = selectedItems.findIndex( item => {
         const itemFound = item == itemId //isso será true ou false
-        return itemFound;
+        return itemFound
     })
 
 
@@ -111,7 +113,7 @@ function handleSelectedItem() {
         // tirar da seleção
         const filteredItems = selectedItems.filter( item => {
             const itemIsDifferent = item != itemId
-            return itemIsDifferent;
+            return itemIsDifferent
         })
 
         selectedItems = filteredItems
@@ -120,6 +122,8 @@ function handleSelectedItem() {
         // se não estiver selecionado, adicionar a seleção
         selectedItems.push(itemId)        
     }
+
+    console.log('selectedItems: ', selectedItems)
 
     // atualizar o campo escondido com os dados selecionados
     collectedItems.value = selectedItems
