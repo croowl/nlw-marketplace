@@ -78,7 +78,7 @@ const itemsToCollect = document.querySelectorAll(".items-grid li")
 
 
 // Depois, crio uma estrutura de repetição pra monitorar todos os items desse local
-for (const item of itemsToCollect) {
+for ( const item of itemsToCollect ) {
     item.addEventListener("click", handleSelectedItem) //jogo o valor pra função handleSelectedItems
 }
 
@@ -109,7 +109,7 @@ function handleSelectedItem(event) {
 
 
     // se já estiver selecionado
-    if(alreadySelected >= 0) {       //se nao estiver nada selecionado, o valor padrao é -1
+    if( alreadySelected >= 0 ) {       //se nao estiver nada selecionado, o valor padrao é -1
         // tirar da seleção
         const filteredItems = selectedItems.filter( item => {
             const itemIsDifferent = item != itemId
@@ -127,8 +127,6 @@ function handleSelectedItem(event) {
 
     // atualizar o campo escondido com os dados selecionados
     collectedItems.value = selectedItems
-
-
 }
 
 

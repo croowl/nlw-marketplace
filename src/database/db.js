@@ -63,19 +63,19 @@ db.serialize(() => {
 //     //     db.run(query, values, afterInsertData)  
 
         
-//     // 3- Consultar dados da tabela
-//     // db.all(`SELECT * FROM places`, function(err, rows) { //rows = registros das tabelas
-//     //     if(err) {
-//     //         return console.log(err)
-//     //     }
+    // 3- Consultar dados da tabela
+    // db.all(`SELECT * FROM places`, function(err, rows) { //rows = registros das tabelas
+    //     if(err) {
+    //         return console.log(err)
+    //     }
 
-//     //     console.log("Aqui estão seus registros: ")
-//     //     console.log(rows)
-//     // })
+    //     console.log("Aqui estão seus registros: ")
+    //     console.log(rows)
+    // })
 
 
-//     // 4- Deletar um dado da tabela (descomente essa linha e salve o arquivo)
-    // db.run(`DELETE FROM places WHERE id = ?`, [5], function(err) {
+    // 4- Deletar um dado da tabela (descomente essa linha e salve o arquivo)
+    // db.run(`DELETE FROM places WHERE id = ?`, [15], function(err) {
     //     if(err) {
     //         return console.log(err)
     //     }

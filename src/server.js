@@ -33,7 +33,7 @@ server.get("/create-point", (req, res) => {
 
     // req.query: Query Strings da nossa URL
         // Esse console.log mostra as Query Strings (informacoes da URL) no console.log
-        // console.log(req.query)
+        console.log(req.query)
 
 
     //Sem nunjucks: res.sendFile(__dirname + "/views/create-point.html")
@@ -66,7 +66,7 @@ server.post("/savepoint", (req,res) => {
         req.body.address2,
         req.body.state,
         req.body.city,
-        req.body.items
+        req.body.items,
     ]
 
     // Função de retorno após inserir dados no database
@@ -79,7 +79,7 @@ server.post("/savepoint", (req,res) => {
         console.log("Cadastrado com sucesso")
         console.log(this) //referencia a resposta que o .run trás
 
-        return res.send("create-point.html", { saved: true})
+        return res.render("create-point.html", { saved: true})
     }
 
     // Callback - a função afterInsertData insere os dados na tabela e só retorna quando estiver 'pronta'
@@ -110,7 +110,7 @@ server.get("/search", (req, res) => {
         const total = rows.length
 
         // Mostrar a pagina HTML com os dados do banco de dados
-        return res.render("search-results.html", { places: rows, total: total})
+        return res.render("search-results.html", { places: rows, total: total })
     })
 })
 
