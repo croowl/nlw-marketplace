@@ -4,7 +4,7 @@ Aplicação web de marketplace de coleta de resíduos, desenvolvido durante a Ne
 ## Para Iniciar o projeto ##
 
 > Instalar dependencias 
-npm install
+>> npm install
 
 > Iniciar o projeto 
-npm start
+>> npm start
